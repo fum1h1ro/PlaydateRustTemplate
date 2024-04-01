@@ -13,7 +13,14 @@ https://rustup.rs/
 
 ## Setup
 
-1. Install Rust target
+1. Install nightly toolchain
+
+```sh
+$ rustup install nightly
+$ rustup default nightly
+```
+
+2. Install Rust target
 
 ```sh
 $ rustup target add thumbv7em-none-eabihf
@@ -24,5 +31,12 @@ $ rustup target add thumbv7em-none-eabihf
 
 ```sh
 $ rake generate:simulator:debug
+$ rake build
+```
+
+or
+
+```sh
+$ rake generate:device:debug
 $ rake build
 ```

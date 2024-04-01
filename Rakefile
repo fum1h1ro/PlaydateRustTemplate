@@ -61,6 +61,7 @@ directory BUILD_DIR
 
 CLEAN.include(BUILD_DIR)
 CLEAN.include('Source/pdex.*')
+CLEAN.include('target')
 CLOBBER.include(PDX_FILES)
 CLOBBER.include(RESOURCE_DST_DIR)
 CLOBBER.include(COMPILE_FLAGS_FILES)
